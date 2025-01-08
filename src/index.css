@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: black;
+}
+
+
+.background-container {
+  background-image: url('/src/imgassets/lovepik-green-technology-background-image_500676483.jpg'); /* Update the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* Adjust this based on your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Assuming your text needs to be white */
+}
+
+.background-container h1,
+.background-container p {
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .background-container {
+    height: auto; /* Adjust height for smaller screens if necessary */
+    padding: 1em;
+  }
+
+  .background-container h1 {
+    font-size: 1.5em;
+  }
+
+  .background-container p {
+    font-size: 1em;
+  }
+}
